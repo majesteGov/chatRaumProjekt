@@ -1,0 +1,153 @@
+* 
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body 
+{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background: #d2cfcf;
+}
+a
+{
+	text-decoration: none;
+}
+ul 
+{
+	list-style: none;
+}
+.item2
+{
+	cursor: pointer;
+	padding: 5px 15px;
+	background: #030622;
+	color: white;
+	border: 3px solid white;
+	font-size: 17px;
+	border-radius: 15px;
+}
+.item3 
+{
+	cursor: pointer;
+	padding: 5px 15px;
+	background: #030622;
+	color: white;
+	border: 3px solid white;
+	font-size: 17px;
+	border-end-end-radius: 15px;
+	border-top-right-radius: 15px;
+}
+.item4 
+{
+	cursor: pointer;
+	padding: 5px 15px;
+	background: #030622;
+	color: white;
+	border: 3px solid white;
+	font-size: 17px;
+}
+/* ****************************** ChatRaum ****************************** */
+
+/* Chat Page */
+
+.container1 
+{
+	max-width: 1050px;
+	margin: 100px auto;
+	overflow: hidden;
+}
+
+.header1 
+{
+	background: #030622;
+	color: #fff;
+	border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: right;
+}
+
+.main 
+{
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+}
+
+.sidebar 
+{
+	background: #020240;
+	color: #fff;
+	padding: 20px 20px 60px;
+	/* overflow-y: scroll; */
+}
+.sidebar h3 
+{
+	margin-bottom: 15px;
+}
+.sidebar h2 
+{
+	font-size: 20px;
+	background: #030622;
+	padding: 40px;
+	color: white;
+	border: 2px solid white;
+	margin-bottom: 20px;
+
+}
+.sidebar ul li 
+{
+	padding: 10px 0;
+}
+
+.chatm 
+{
+	padding: 30px;
+	max-height: 500px;
+	overflow-y: scroll;
+}
+.chatm .message 
+{
+	padding: 8px;
+	margin-bottom: 15px;
+	background-color: #5a9dd8;
+	border-radius: 10px;
+}
+.chatm .message .meta 
+{
+	font-size: 17px;
+	font-weight: bolder;
+	color:  rgb(249, 249, 249);
+	opacity: 0.9;
+	margin-bottom: 5px;
+}
+
+.chatf-container 
+{
+	padding-right: 80px;
+	padding: 10px 10px;
+	background-color: #030622;
+	border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.chatf-container form 
+{
+	display: flex;
+	padding-left:20px;
+	padding-right: 20px;
+}
+
+.chatf-container input[type='text'] 
+{
+	font-size: 15px;
+	padding: 15px;
+	padding-right: 32px;
+	border: black;
+	height: 45px;
+	flex: 2;
+	border-end-start-radius: 15px;
+	border-start-start-radius: 15px;
+}
