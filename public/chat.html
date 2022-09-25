@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css" />
-    <title>ChatRaum</title>
-  </head>
-  
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css" />
+  <title>ChatRaum</title>
+</head>
+
 <body>
   <div class="container1">
     <header class="header1">
-      <a href="index.html" id="quit-btn" class="item2">Chat verlassen</a>
+      <a href="Erst.html" id="quit-btn" class="item2">Chat verlassen</a>
     </header>
 
     <main class="main">
-    <div class="sidebar">
+      <div class="sidebar">
         <h3>Tischname: </h3>
         <h2 id="room-name"></h2>
         <h3>TEILNEHMER: <span id="count"></span></h3>
         <ul id="users"></ul>
       </div>
-    <div class="chatm"></div></main>
+      <div class="chatm"></div>
+    </main>
 
     <div class="chatf-container">
       <form id="chat-form">
-        <input id="sms" id="textarea" type="text" placeholder="Enter your message ....."required/>
+        <input id="sms" id="textarea" type="text" placeholder="Enter your message ....." required />
         <!-- <p id="textarea"></p> -->
         <button class="item4" id="speak">Audio</button>
         <button class="item3">Senden</button>
-      </form> </div>
+      </form>
     </div>
+  </div>
 
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"></script> <!-- Implements the user and room -->
-    <script src="javaScript/main.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"></script>
+  <!-- Implements the user and room -->
+  <script src="javaScript/main.js"></script>
 
-    <!-- <script>
+  <!-- <script>
     var speak = document.getElementById('speak');
     var textarea = document.getElementById('textarea');
     var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -51,5 +55,6 @@
     }
     </script> -->
 
-  </body>
+</body>
+
 </html>
